@@ -40,7 +40,7 @@ def translate(target_lang: str, text: str):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('lan', type=str, help='Язык на который перевести тексе')
+    parser.add_argument('lan', type=str, help='Код языка на который перевести тексе')
     parser.add_argument('text', type=str, help='Текст для перевода')
     args = parser.parse_args()
     translate(args.lan, args.text)
